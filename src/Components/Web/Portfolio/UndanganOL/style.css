@@ -1,0 +1,40 @@
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .changeBg {
+    left: 0;
+    animation: change 20s infinite ease-in-out;
+  }
+
+  @keyframes change {
+    0% {
+      background-image: url("../../../../assets/images/portfolio/undanganOL/gallery/gal1.jpg");
+    }
+    20% {
+      background-image: url("../../../../assets/images/portfolio/undanganOL/gallery/gal2.jpg");
+    }
+    40% {
+      background-image: url("../../../../assets/images/portfolio/undanganOL/gallery/gal3.jpg");
+    }
+    60% {
+      background-image: url("../../../../assets/images/portfolio/undanganOL/gallery/gal4.jpg");
+    }
+    100% {
+      background-image: url("../../../../assets/images/portfolio/undanganOL/gallery/gal5.jpg");
+    }
+  }

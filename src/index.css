@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Golos+Text&family=Great+Vibes&family=Oswald&family=Roboto:ital,wght@0,400;0,900;1,900&family=Ubuntu&family=Montserrat&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .dark {
+      background-image: linear-gradient(to top, theme("colors.science-blue.800"), theme("colors.science-blue.950"));
+      color: theme("colors.science-blue.50");
+    }
+
+    .light {
+        background-image: linear-gradient(to right, theme("colors.science-blue.400"), theme("colors.science-blue.100"));
+        /* background-color: theme("colors.science-blue.500"); */
+        color: theme("colors.science-blue.950");
+      }
+
+    .link {
+      font-size: 0.75rem;
+      line-height: 1rem;      
+      text-decoration: none;
+      padding: 0;
+      margin: 0;
+      width: fit-content;
+      cursor: pointer;
+    }
+
+    .link:hover {
+      /* width: 100%;
+      height: 100%; */
+      border-radius: 5px;
+    }
+
+    .dark .link:hover {
+      background-image: linear-gradient(to top, theme("colors.science-blue.500"), theme("colors.science-blue.800"));
+    }
+
+    .light .link:hover {
+      background-image: linear-gradient(to right, theme("colors.science-blue.200"), theme("colors.science-blue.100"));
+    }
+  }
