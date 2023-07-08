@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Language from "../Language/Language";
 import Theme from "../Theme/Theme";
-import { FcPrevious } from "react-icons/fc";
+import { FaAngleLeft } from "react-icons/fa";
 import RightBar from "./RightBar";
 
 function ListMenu({ changeTheme, theme }) {
@@ -15,12 +15,12 @@ function ListMenu({ changeTheme, theme }) {
         <Theme theme={theme} changeTheme={changeTheme} />
         <Language theme={theme} />
         <button
-          className={`text-2xl bg-transparent w-fit h-fit link ${
+          className={`text-xl w-fit h-fit link p-1 hover:rounded-full  ${
             open && "rotate-180"
           } transform transition duration-300`}
           onClick={onClick}
         >
-          <FcPrevious />
+          <FaAngleLeft />
         </button>
         <RightBar theme={theme} open={open} />
       </div>

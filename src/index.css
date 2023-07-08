@@ -33,10 +33,20 @@
     }
 
     .dark .link:hover {
-      background-image: linear-gradient(to top, theme("colors.science-blue.500"), theme("colors.science-blue.800"));
+      background-image: linear-gradient(to right, theme("colors.science-blue.500"), theme("colors.science-blue.800"));
+      color: theme("colors.science-blue.50");
     }
 
     .light .link:hover {
       background-image: linear-gradient(to right, theme("colors.science-blue.200"), theme("colors.science-blue.100"));
+      color: theme("colors.science-blue.950");
+    }
+
+    .dark .text {
+      color: theme("colors.buttered-rum.300");
+    }
+
+    .light .text {
+      color: theme("colors.science-blue.50");
     }
   }

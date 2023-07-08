@@ -1,42 +1,13 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import ListMenuDesktop from "./Desktop/ListMenu";
 import ListMenuMobile from "./Mobile/ListMenu";
-import { useTranslation } from "react-i18next";
 
-function Main() {
-  const [theme, setTheme] = useState("light");
-  const prevTheme = usePrevious(theme);
-
-  const { t } = useTranslation();
-
-  useEffect(() => {
-    if (
-      localStorage.getItem("theme") === "undefined" ||
-      !localStorage.getItem("theme")
-    ) {
-      localStorage.setItem("theme", "light");
-    }
-    setTheme(localStorage.getItem("theme"));
-
-    // console.log("Load " + localStorage.getItem("theme"));
-  }, []);
-
-  const changeTheme = () => {
-    theme === "dark" ? setTheme("light") : setTheme("dark");
-    localStorage.setItem("theme", prevTheme);
-    // console.log("Theme " + localStorage.getItem("theme"));
-  };
-
-  function usePrevious(value) {
-    const ref = useRef();
-    useEffect(() => {
-      ref.current = value; //assign the value of ref to the argument
-    }, [value]); //this code will run when the value of 'value' changes
-    return ref.current; //in the end, return the current ref value.
-  }
+function Main({ theme, changeTheme }) {
   return (
-    <div className={`fixed z-50 top-0 left-0 w-full h-[4rem] ${theme}`}>
-      <div className={`w-[95%] md:w-[80%] h-full shadow-xl mx-auto`}>
+    <div
+      className={`relative z-50 top-0 left-0 w-full h-[4rem] shadow-xl ${theme}`}
+    >
+      <div className={`w-[95%] md:w-[80%] h-full mx-auto`}>
         <div className="flex justify-between items-center w-full h-full">
           <div className="flex justify-start items-center w-full h-full">
             <div className="rounded-full flex justify-center items-center">
