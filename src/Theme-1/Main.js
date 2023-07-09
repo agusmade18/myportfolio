@@ -33,7 +33,7 @@ function Main() {
   }
 
   return (
-    <div className={`relative top-0 left-0 w-full h-full p-0 m-0 z-0 ${theme}`}>
+    <div className={`relative top-0 left-0 w-full h-full z-0 ${theme}`}>
       <Header theme={theme} changeTheme={changeTheme} />
       <Content theme={theme} changeTheme={changeTheme} />
     </div>

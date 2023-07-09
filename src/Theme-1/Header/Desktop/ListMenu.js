@@ -10,7 +10,7 @@ function ListMenu({ changeTheme, theme }) {
   return (
     <>
       <div className="relative hidden md:flex font-Montserrat text-base h-full justify-end items-center w-full">
-        <ul className="inline-flex space-x-4 w-full h-full">
+        <ul className="inline-flex space-x-4 w-full h-full justify-end">
           {menus.map((menu, i) => (
             <li
               key={i}

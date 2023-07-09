@@ -49,4 +49,12 @@
     .light .text {
       color: theme("colors.science-blue.50");
     }
+
+    .dark .separator {
+      background: theme("colors.buttered-rum.300");
+    }
+
+    .light .separator {
+      background: theme("colors.science-blue.950");
+    }
   }
