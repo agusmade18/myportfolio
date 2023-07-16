@@ -5,7 +5,7 @@ import ListMenuMobile from "./Mobile/ListMenu";
 function Main({ theme, changeTheme }) {
   return (
     <div
-      className={`relative z-50 top-0 left-0 w-full h-[4rem] shadow-xl ${theme}`}
+      className={`sticky md:fixed z-50 top-0 left-0 w-full h-[4rem] shadow-xl ${theme}`}
     >
       <div className={`w-[95%] md:w-[80%] h-full mx-auto`}>
         <div className="flex justify-between items-center w-full h-full">

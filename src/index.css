@@ -57,4 +57,31 @@
     .light .separator {
       background: theme("colors.science-blue.950");
     }
+
+    .dark .button {
+      background: theme("colors.buttered-rum.300");
+      color: theme("colors.science-blue.950");
+    }
+
+    .dark .button:hover {
+      background: theme("colors.buttered-rum.200");
+    }
+
+    .light .button {
+      background: theme("colors.science-blue.950");
+      color: theme("colors.science-blue.50");
+    }
+    .light .button:hover {
+      background: theme("colors.science-blue.800");
+    }
+
+    .dark .badge {
+      background: theme("colors.buttered-rum.50");
+      color: theme("colors.science-blue.950");
+    }
+
+    .light .badge {
+      background: theme("colors.buttered-rum.950");
+      color: theme("colors.science-blue.50");
+    }
   }

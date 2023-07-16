@@ -6,5 +6,11 @@
     "text" : "I am",
     "description" : "I build accessible, inclusive products and digital experiences for the web.",
     "profile" : "About Me",
-    "desProfil" : "I was born from Bali Island. I have interest in programming since university. I like make a simple website. This is some technologies that I have used to create several website :"
+    "desProfil" : "I was born from Bali Island. I have interest in programming since university. I like make a simple website. This is some technologies that I have used to create several website :",
+    "portfolio" : "Portfolio",
+    "desPortfolio" : "This is a little website I've ever made :",
+    "desPf0": "Company profile website that provides online invitations.",
+    "btnPf0": "See Website",
+    "contact": "Contact",
+    "desContact": "Don't feel hesitate to contact me"
 }

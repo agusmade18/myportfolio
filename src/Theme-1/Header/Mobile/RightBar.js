@@ -1,8 +1,9 @@
 import React from "react";
 import menus from "../MenuLists";
 import { useTranslation } from "react-i18next";
+import { Link, animateScroll as scroll } from "react-scroll";
 
-function RightBar({ theme, open }) {
+function RightBar({ theme, open, closeBar }) {
   const { t } = useTranslation();
   return (
     <div
@@ -12,13 +13,23 @@ function RightBar({ theme, open }) {
     >
       <div className="flex flex-col justify-center items-center space-y-5 mt-5">
         {menus.map((menu, i) => (
-          <div className="flex flex-col justify-center items-center">
-            <div className="w-7 h-7 flex justify-center items-center">
-              {menu.icon}
-            </div>
+          <Link
+            to={menu.link}
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            key={i}
+            onClick={closeBar}
+          >
+            <div className="flex flex-col justify-center items-center">
+              <div className="w-7 h-7 flex justify-center items-center">
+                {menu.icon}
+              </div>
 
-            <p className="text-sm">{t(`menus${i}`)}</p>
-          </div>
+              <p className="text-sm">{t(`menus${i}`)}</p>
+            </div>
+          </Link>
         ))}
       </div>
     </div>

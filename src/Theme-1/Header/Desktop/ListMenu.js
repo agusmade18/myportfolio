@@ -4,6 +4,7 @@ import menus from "../MenuLists";
 import Language from "../Language/Language";
 import { useTranslation } from "react-i18next";
 import Theme from "../Theme/Theme";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function ListMenu({ changeTheme, theme }) {
   const { t } = useTranslation();
@@ -12,13 +13,20 @@ function ListMenu({ changeTheme, theme }) {
       <div className="relative hidden md:flex font-Montserrat text-base h-full justify-end items-center w-full">
         <ul className="inline-flex space-x-4 w-full h-full justify-end">
           {menus.map((menu, i) => (
-            <li
+            <Link
+              to={menu.link}
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
               key={i}
-              className="inline-flex justify-center w-fit items-center space-x-1 drop-shadow-xl cursor-pointer whitespace-nowrap hover:scale-90 transition duration-500"
+              className="h-full flex justify-center items-center"
             >
-              <span>{menu.icon}</span>
-              <p>{t(`menus${i}`)}</p>
-            </li>
+              <li className="inline-flex justify-center w-fit items-center space-x-1 drop-shadow-xl cursor-pointer whitespace-nowrap hover:scale-90 transition duration-500">
+                <span>{menu.icon}</span>
+                <p>{t(`menus${i}`)}</p>
+              </li>
+            </Link>
           ))}
           <div className="border bg-science-blue-50 rounded-3xl w-[0.1px] h-[50%] my-auto"></div>
           <Theme theme={theme} changeTheme={changeTheme} />

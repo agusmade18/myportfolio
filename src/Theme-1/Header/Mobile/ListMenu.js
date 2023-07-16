@@ -9,6 +9,10 @@ function ListMenu({ changeTheme, theme }) {
   const onClick = () => {
     setOpen(!open);
   };
+
+  const closeBar = () => {
+    setOpen(false);
+  };
   return (
     <>
       <div className="relative z-50 md:hidden font-Montserrat text-xl h-full w-full flex justify-end items-center space-x-5">
@@ -22,7 +26,7 @@ function ListMenu({ changeTheme, theme }) {
         >
           <FaAngleLeft />
         </button>
-        <RightBar theme={theme} open={open} />
+        <RightBar theme={theme} open={open} closeBar={closeBar} />
       </div>
     </>
   );

@@ -8,7 +8,7 @@ function Socials() {
     { link: "", icon: <BsLinkedin /> },
   ];
   return (
-    <div className="flex justify-end md:justify-start w-full items-center text-lg space-x-5 pt-2">
+    <div className="flex justify-end md:justify-center w-full items-center text-lg space-x-5 pt-2">
       {socials.map((social, i) => (
         <a
           href={social.link}

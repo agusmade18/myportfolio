@@ -6,5 +6,11 @@
     "text" : "Perkenalkan, saya",
     "description" : "Saya membuat produk dan pengalaman digital yang dapat diakses dan inklusif untuk web.",
     "profile" : "Tentang Saya",
-    "desProfil" : "Saya berasal dari pulau bali. Memiliki ketertarikan dengan programming sejak di perguruan tinggi. saya menyukai bagaimana membuat program secara sederhana. Berikut ini teknologi yang oernah saya gunakan untuk membuat beberapa program :"
+    "desProfil" : "Saya berasal dari pulau bali. Memiliki ketertarikan dengan programming sejak di perguruan tinggi. saya menyukai bagaimana membuat program secara sederhana. Berikut ini teknologi yang oernah saya gunakan untuk membuat beberapa program :",
+    "portfolio" : "Portofolio",
+    "desPortfolio" : "Ini adalah sedikit website yang pernah saya buat :",
+    "desPf0":"Website profil perusahaan yang menyediakan undangan online.",
+    "btnPf0":"Lihat Website",
+    "contact": "Hubungi Saya",
+    "desContact": "Jangan merasa segan untuk menghubungi saya"
 }
