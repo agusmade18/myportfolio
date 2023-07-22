@@ -12,5 +12,9 @@
     "desPf0":"オンライン招待状を提供する会社概要ホームページ。",
     "btnPf0":"ホームページを見る",
     "contact": "お問い合わせ",
-    "desContact": "遠慮せずにご連絡ください"
+    "desContact": "遠慮せずにご連絡ください",
+    "formName": "お名前",
+    "formEmail": "メールアドレス",
+    "formMessage": "メッセージ",
+    "formSend": "送信する"
 }

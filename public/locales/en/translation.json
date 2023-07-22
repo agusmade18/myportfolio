@@ -12,5 +12,9 @@
     "desPf0": "Company profile website that provides online invitations.",
     "btnPf0": "See Website",
     "contact": "Contact",
-    "desContact": "Don't feel hesitate to contact me"
+    "desContact": "Don't feel hesitate to contact me",
+    "formName": "Name",
+    "formEmail": "Email",
+    "formMessage": "Messages",
+    "formSend": "Send Message"
 }

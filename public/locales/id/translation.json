@@ -12,5 +12,9 @@
     "desPf0":"Website profil perusahaan yang menyediakan undangan online.",
     "btnPf0":"Lihat Website",
     "contact": "Hubungi Saya",
-    "desContact": "Jangan merasa segan untuk menghubungi saya"
+    "desContact": "Jangan merasa segan untuk menghubungi saya",
+    "formName": "Nama",
+    "formEmail": "Email",
+    "formMessage": "Pesan",
+    "formSend": "Kirim Pesan"
 }
