@@ -37,7 +37,7 @@ function PortfolioLists() {
             <div className="flex justify-end w-full mt-4">
               <a href={list.link} target="_blank">
                 <button className="button px-3 py-2 text-sm rounded-md hover:scale-90 transition duration-300">
-                  {t(`btnPf${i}`)}
+                  {t(`btnPf`)}
                 </button>
               </a>
             </div>
