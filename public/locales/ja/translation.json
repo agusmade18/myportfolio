@@ -16,5 +16,6 @@
     "formName": "お名前",
     "formEmail": "メールアドレス",
     "formMessage": "メッセージ",
-    "formSend": "送信する"
+    "formSend": "送信する",
+    "alert":"箱を空にすることはできません!"
 }

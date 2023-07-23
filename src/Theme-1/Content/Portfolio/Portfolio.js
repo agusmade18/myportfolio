@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FcTimeline } from "react-icons/fc";
 import PortfolioLists from "./PortfolioLists";
+import WOW from "wowjs";
+import "animate.css";
 
 function Portfolio() {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false,
+    }).init();
+  }, []);
   const { t } = useTranslation();
   return (
     <section
       id="portfolio"
       className="relative top-0 mt-10 pb-5 left-0 mx-auto w-[90%]"
     >
-      <div className="flex flex-col justify-center items-start">
+      <div className="flex flex-col justify-center items-start wow animate__animated animate__zoomIn">
         <div className="flex justify-center items-center space-x-3 h-full border p-2 rounded-xl shadow-2xl">
           <div className="text-4xl flex justify-center items-center h-full">
             <FcTimeline />

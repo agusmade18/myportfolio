@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FcBusinessman } from "react-icons/fc";
 import react from "../../../assets/images/react.png";
 import laravel from "../../../assets/images/laravel.png";
 import tailwind from "../../../assets/images/tailwind.webp";
 import phpmyadmin from "../../../assets/images/phpmyadmin.png";
+import WOW from "wowjs";
+import "animate.css";
 
 function Profile() {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false,
+    }).init();
+  }, []);
   const { t } = useTranslation();
   const tecs = [
     {
@@ -32,7 +39,7 @@ function Profile() {
       className="relative top-4 pt-[5rem] pb-10 left-0 mx-auto w-[90%]"
     >
       <div className="flex flex-col justify-center items-start">
-        <div className="flex justify-center items-center space-x-3 h-full border p-2 rounded-xl shadow-2xl">
+        <div className="flex justify-center items-center space-x-3 h-full border p-2 rounded-xl shadow-2xl wow animate__animated animate__zoomIn">
           <div className="text-4xl flex justify-center items-center h-full">
             <FcBusinessman />
           </div>
@@ -40,10 +47,10 @@ function Profile() {
             {t("profile")}
           </p>
         </div>
-        <p className="mt-4 font-Montserrat tracking-wide text-base">
+        <p className="mt-4 font-Montserrat tracking-wide text-base wow animate__animated animate__zoomIn">
           {t("desProfil")}
         </p>
-        <div className="flex flex-wrap justify-center items-center mx-auto md:mx-0 space-x-5 mt-4 badge h-fit p-3 rounded-3xl shadow-lg">
+        <div className="flex flex-wrap justify-center items-center mx-auto md:mx-0 space-x-5 mt-4 badge h-fit p-3 rounded-3xl shadow-lg wow animate__animated animate__zoomIn">
           {tecs.map((tec, i) => (
             <div
               className="cursor-pointer hover:scale-105 transition duration-300 "

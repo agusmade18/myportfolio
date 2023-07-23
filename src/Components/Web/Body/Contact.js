@@ -43,7 +43,7 @@ function Contact() {
                 type="text"
                 autocomplete="name"
                 required
-                className="min-w-0 w-full lg:w-3/4 flex-auto rounded-md border-0 bg-gray-200 px-3.5 py-2 text-gray-700 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6 text-sm"
+                className="min-w-0 bg-science-blue-50 w-full lg:w-3/4 flex-auto rounded-md border-0 bg-gray-200 px-3.5 py-2 text-gray-700 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6 text-sm"
                 placeholder="Enter your name"
               />
             </div>
@@ -55,7 +55,7 @@ function Contact() {
                 type="email"
                 autocomplete="name"
                 required
-                className="min-w-0 w-full lg:w-3/4 flex-auto rounded-md border-0 bg-gray-200 px-3.5 py-2 text-gray-700 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6 text-sm"
+                className="min-w-0 bg-science-blue-50 w-full lg:w-3/4 flex-auto rounded-md border-0 bg-gray-200 px-3.5 py-2 text-gray-700 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6 text-sm"
                 placeholder="Enter your email address"
               />
             </div>
@@ -66,7 +66,7 @@ function Contact() {
                 name="message"
                 rows={5}
                 required
-                className="min-w-0 w-full lg:w-3/4 flex-auto rounded-md border-0 bg-gray-200 px-3.5 py-2 text-gray-700 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6 text-sm"
+                className="min-w-0 bg-science-blue-50 w-full lg:w-3/4 flex-auto rounded-md border-0 bg-gray-200 px-3.5 py-2 text-gray-700 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6 text-sm"
                 placeholder="Enter your email message"
               ></textarea>
             </div>

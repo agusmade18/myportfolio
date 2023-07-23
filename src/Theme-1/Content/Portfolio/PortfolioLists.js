@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import lists from "./Lists";
 import { useTranslation } from "react-i18next";
+import WOW from "wowjs";
+import "animate.css";
 
 function PortfolioLists() {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false,
+    }).init();
+  }, []);
   const { t } = useTranslation();
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4 w-full">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4 w-full wow animate__animated animate__zoomIn">
       {lists.map((list, i) => (
-        <div className="w-full flex justify-center items-start space-x-2">
+        <div
+          key={i}
+          className="w-full flex justify-center items-start space-x-2"
+        >
           <img
             src={list.image}
             className="rounded-full w-[8rem] h-[8rem] object-cover aspect-square object-top shadow-xl border-4 border-science-blue-50"
@@ -18,8 +28,10 @@ function PortfolioLists() {
             </p>
             <p className="text-sm mt-2">{t(`desPf${i}`)}</p>
             <div className="flex flex-wrap items-center justify-center text-xs mt-3 font-extrabold space-x-2">
-              {list.tag.map((tag) => (
-                <div className="badge rounded-md py-1 px-2">{tag}</div>
+              {list.tag.map((tag, j) => (
+                <div key={j} className="badge rounded-md py-1 px-2">
+                  {tag}
+                </div>
               ))}
             </div>
             <div className="flex justify-end w-full mt-4">

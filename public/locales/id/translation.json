@@ -16,5 +16,6 @@
     "formName": "Nama",
     "formEmail": "Email",
     "formMessage": "Pesan",
-    "formSend": "Kirim Pesan"
+    "formSend": "Kirim Pesan",
+    "alert":"Data tidak boleh kosong!"
 }

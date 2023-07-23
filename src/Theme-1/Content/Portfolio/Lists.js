@@ -3,7 +3,7 @@ const lists = [
   {
     name: "UNDAGI BALI",
     tag: ["react", "tailwind"],
-    link: "",
+    link: "https://undagi-bali.com/",
     image: p1,
   },
 ];

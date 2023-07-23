@@ -16,5 +16,6 @@
     "formName": "Name",
     "formEmail": "Email",
     "formMessage": "Messages",
-    "formSend": "Send Message"
+    "formSend": "Send Message",
+    "alert":"Field can not be empty!"
 }
