@@ -1,7 +1,14 @@
 import p1 from "../../../assets/images/portfolio/undagibali.jpg";
 import p2 from "../../../assets/images/portfolio/insomnia.jpg";
 import p3 from "../../../assets/images/portfolio/earth.jpg";
+import p4 from "../../../assets/images/portfolio/inagira.jpg";
 const lists = [
+  {
+    name: "Export Import Charcoal",
+    tag: ["react", "tailwind"],
+    link: "https://inagira.vercel.app/",
+    image: p4,
+  },
   {
     name: "UNDAGI BALI",
     tag: ["react", "tailwind"],
