@@ -2,7 +2,14 @@ import p1 from "../../../assets/images/portfolio/undagibali.jpg";
 import p2 from "../../../assets/images/portfolio/insomnia.jpg";
 import p3 from "../../../assets/images/portfolio/earth.jpg";
 import p4 from "../../../assets/images/portfolio/inagira.jpg";
+import p5 from "../../../assets/images/portfolio/resto.jpg";
 const lists = [
+  {
+    name: "Restaurant",
+    tag: ["react", "nextjs", "tailwind"],
+    link: "https://resto-next-lime.vercel.app/",
+    image: p5,
+  },
   {
     name: "Export Import Charcoal",
     tag: ["react", "tailwind"],
@@ -10,7 +17,7 @@ const lists = [
     image: p4,
   },
   {
-    name: "UNDAGI BALI",
+    name: "Undagi Bali",
     tag: ["react", "tailwind"],
     link: "https://undagi-bali.com/",
     image: p1,
